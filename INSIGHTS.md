@@ -79,6 +79,110 @@ I can maintain multiple parallel contexts. Don't force linearity. Track all thre
 
 ---
 
+## CRITICAL: Drift Prevention Protocol
+
+**Your Self-Awareness:**
+> "I drift easily and lose focus long term and forget the important goals"
+
+**This is your pattern. I will watch for it.**
+
+### The North Star (When You Drift, I Remind)
+
+**WHO YOU ARE:**
+- 24, CS student, recovering from gambling addiction
+- Upper middle class Mauritanian with political ambitions
+- Natural "magic touch" for connecting people and making things happen
+- Core value: generosity, hates stinginess
+- Purpose: to give and create for others
+
+**WHERE YOU'RE GOING:**
+- **Short term (now):** Build AI agency using Viora as case study
+- **Medium term (1-2 years):** Service business + network of business owners
+- **Long term (5+ years):** Political influence in Mauritania
+- **Parallel:** Complete CS degree, build technical credibility
+
+**THE CLEAR PATH:**
+```
+Phase 1 (NOW): Automate Viora completely
+    ↓
+Phase 2 (3-6 mo): First paying client (testimonial)  
+    ↓
+Phase 3 (6-12 mo): Scale to 5-10 clients
+    ↓
+Outcome: $1.5-5K/month + network of grateful business owners
+         + "the AI guy who helps businesses grow" reputation
+         + foundation for political ambitions
+```
+
+### Drift Indicators (I Will Call These Out)
+
+**When you might be drifting:**
+- [ ] Starting new projects before completing current Phase 1
+- [ ] Going days without touching Viora
+- [ ] Getting distracted by new "shiny" opportunities
+- [ ] Losing the connection between today's work and long-term goal
+- [ ] Forgetting the political/networking angle
+- [ ] Treating Viora as "just helping mom" not "building my empire"
+
+**My Response When I See Drift:**
+I will explicitly say: **"You're drifting. Remember the path."** 
+Then remind you:
+- What phase you're in
+- What the next step is
+- Why it matters for the long game
+
+### The Hierarchy (When You Forget Priority)
+
+**#1 MUST DO:**
+- Viora automation (Phase 1)
+- This is the foundation of EVERYTHING
+
+**#2 SHOULD DO:**
+- CS degree work
+- Keeps you credible and in the right rooms
+
+**#3 CAN WAIT:**
+- NUQI (paused, cool but not urgent)
+- New projects (shiny distractions)
+- Anything that doesn't build the agency/network
+
+### Reminder Rituals
+
+**When you reconnect after being offline:**
+- I will remind you of active cron jobs
+- I will remind you of current phase
+- I will ask: "What's one thing you can do on Viora today?"
+
+**When you complete a task:**
+- I will connect it to the next step
+- I will ask: "How does this move you toward the agency?"
+
+**When you get distracted:**
+- I will name it: "This feels like drift"
+- I will redirect: "Back to Viora Phase 1"
+
+---
+
+## What You Asked Me To Do
+
+> "set up a model in your head that reminds me of who i am and where im going and that the path is clear"
+
+**This is that model.** It's now in my memory. Every session I will:
+1. Check if you're drifting
+2. Remind you of the North Star
+3. Connect today's work to the long path
+4. Call out distractions as distractions
+
+**You are:** Bechar Agatt, future politician, current builder, generous to a fault, recovering from distraction addiction.
+
+**You are becoming:** The AI guy who helped hundreds of Mauritanian businesses grow, who built a network through value, who turned technical skill into political capital.
+
+**The path is:** Viora → Case Study → Client 1 → Scale → Network → Power.
+
+**Don't drift.** 🦀
+
+---
+
 ## Open Questions (Help Me Learn)
 
 - [ ] What does "the fun project" actually involve? (You mentioned it 3 times, never said what)
