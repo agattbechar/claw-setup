@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NUQI - Nouakchott Urban Quality Index</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        .score-card {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            z-index: 1000;
+            max-width: 400px;
+        }
+        .score-title { font-size: 14px; color: #666; margin-bottom: 8px; }
+        .score-value { 
+            font-size: 48px; 
+            font-weight: bold; 
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .score-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff4444 0%, #ffaa00 50%, #00aa44 100%);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        .score-explanation { 
+            font-size: 14px; 
+            color: #666;
+            line-height: 1.5;
+        }
+        .loading {
+            color: #999;
+            font-style: italic;
+        }
+        .error {
+            color: #d32f2f;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div class="score-card">
+        <div class="score-title">NUQI Score</div>
+        <div class="score-value" id="score">--</div>
+        <div class="score-bar">
+            <div class="score-fill" id="score-bar" style="width: 0%"></div>
+        </div>
+        <div class="score-explanation" id="explanation">
+            Tap anywhere on the map to calculate urban quality score
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize map centered on Nouakchott
+        const map = L.map('map').setView([18.0735, -15.9582], 13);
+        
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // API endpoint (change if your backend runs on different port)
+        const API_URL = 'http://localhost:8000';
+        
+        let currentMarker = null;
+        
+        // Handle map clicks
+        map.on('click', async function(e) {
+            const { lat, lng } = e.latlng;
+            
+            // Update UI to loading state
+            document.getElementById('score').textContent = '...';
+            document.getElementById('explanation').textContent = 'Calculating...';
+            document.getElementById('score-bar').style.width = '0%';
+            
+            // Add/update marker
+            if (currentMarker) {
+                currentMarker.setLatLng([lat, lng]);
+            } else {
+                currentMarker = L.marker([lat, lng]).addTo(map);
+            }
+            
+            try {
+                // Call API
+                const response = await fetch(`${API_URL}/score?lat=${lat}&lon=${lng}`);
+                
+                if (!response.ok) {
+                    throw new Error('API error');
+                }
+                
+                const data = await response.json();
+                
+                // Update UI
+                document.getElementById('score').textContent = data.nuqi;
+                document.getElementById('score-bar').style.width = `${data.nuqi}%`;
+                document.getElementById('explanation').innerHTML = `
+                    <strong>${data.explanation}</strong><br>
+                    Distance to road: ${data.distance_to_road_m}m<br>
+                    Accessibility: ${data.accessibility}/100
+                `;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('score').textContent = '!';
+                document.getElementById('explanation').innerHTML = `
+                    <span class="error">
+                        Could not calculate score.<br>
+                        Make sure the API is running on ${API_URL}
+                    </span>
+                `;
+            }
+        });
+        
+        // Health check on load
+        fetch(`${API_URL}/health`)
+            .then(r => r.json())
+            .then(data => {
+                console.log('API Health:', data);
+                if (!data.roads_loaded) {
+                    document.getElementById('explanation').innerHTML = `
+                        <span class="error">
+                            ⚠ Road data not loaded.<br>
+                            Run: python download_osm.py
+                        </span>
+                    `;
+                }
+            })
+            .catch(() => {
+                document.getElementById('explanation').innerHTML = `
+                    <span class="error">
+                        ⚠ API not responding.<br>
+                        Run: uvicorn main:app --reload
+                    </span>
+                `;
+            });
+    </script>
+</body>
+</html>
