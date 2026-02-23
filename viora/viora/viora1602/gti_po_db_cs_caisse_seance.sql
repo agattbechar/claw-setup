@@ -1,0 +1,59 @@
+-- MySQL dump 10.13  Distrib 5.7.10, for Win64 (x86_64)
+--
+-- Host: localhost    Database: gti_po_db
+-- ------------------------------------------------------
+-- Server version	5.7.10-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cs_caisse_seance`
+--
+
+DROP TABLE IF EXISTS `cs_caisse_seance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cs_caisse_seance` (
+  `idSeance` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `fkIdUsr` int(10) unsigned NOT NULL,
+  `fkIdCaisse` int(10) unsigned NOT NULL,
+  `dtDebut` datetime DEFAULT NULL,
+  `dtFin` datetime DEFAULT NULL,
+  `ccMntSeance` double NOT NULL DEFAULT '0',
+  `ccMntEncHorsVente` double DEFAULT '0',
+  `ccMntRemise` double DEFAULT '0',
+  PRIMARY KEY (`idSeance`),
+  KEY `fkIdUsr` (`fkIdUsr`),
+  KEY `fkIdCaisse` (`fkIdCaisse`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cs_caisse_seance`
+--
+
+LOCK TABLES `cs_caisse_seance` WRITE;
+/*!40000 ALTER TABLE `cs_caisse_seance` DISABLE KEYS */;
+INSERT INTO `cs_caisse_seance` VALUES (1,2,0,'2013-04-24 10:24:12',NULL,0,0,0),(2,4,1,'2021-10-06 06:59:33','2025-10-29 21:27:15',7330,0,0),(3,4,1,'2025-10-30 17:33:11','2025-10-31 21:54:33',0,0,147),(4,4,1,'2025-11-01 16:31:33','2025-11-01 21:49:47',2600,0,95),(5,4,1,'2025-11-03 15:44:51','2025-11-03 21:10:15',0,0,0),(6,4,1,'2025-11-03 21:14:23','2025-11-04 20:59:05',600,0,30),(7,4,1,'2025-11-05 16:28:14','2025-11-05 19:15:36',1500,0,20),(8,4,1,'2025-11-05 20:12:47','2025-11-05 21:41:58',0,0,95.6),(9,4,1,'2025-11-06 08:11:11','2025-11-12 19:54:23',42632,0,1042),(10,4,1,'2025-11-12 19:55:45','2025-12-08 12:52:58',25030,0,480),(11,4,1,'2025-12-08 15:16:30','2025-12-11 21:38:15',1340,0,140),(12,4,1,'2025-12-12 10:41:10','2025-12-13 18:59:52',2070,0,0),(13,4,1,'2025-12-13 19:00:23','2026-01-24 21:53:48',62460,0,4294),(14,4,1,'2026-01-25 17:32:07',NULL,25470,0,1760);
+/*!40000 ALTER TABLE `cs_caisse_seance` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-02-16 19:11:11

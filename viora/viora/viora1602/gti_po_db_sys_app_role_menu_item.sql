@@ -1,0 +1,59 @@
+-- MySQL dump 10.13  Distrib 5.7.10, for Win64 (x86_64)
+--
+-- Host: localhost    Database: gti_po_db
+-- ------------------------------------------------------
+-- Server version	5.7.10-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `sys_app_role_menu_item`
+--
+
+DROP TABLE IF EXISTS `sys_app_role_menu_item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sys_app_role_menu_item` (
+  `idMnLk` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `codeMnLk` varchar(45) DEFAULT NULL,
+  `libMnLk` varchar(145) DEFAULT NULL,
+  `libMnLk_ar` varchar(145) DEFAULT NULL,
+  `formClass` varchar(145) NOT NULL,
+  `estSuiviParSep` tinyint(3) unsigned NOT NULL,
+  `ordreAffMnLk` tinyint(3) unsigned NOT NULL,
+  `fk_idMenu` int(10) unsigned DEFAULT '0',
+  `isWeb` tinyint(3) unsigned DEFAULT '0',
+  `icon` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`idMnLk`)
+) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sys_app_role_menu_item`
+--
+
+LOCK TABLES `sys_app_role_menu_item` WRITE;
+/*!40000 ALTER TABLE `sys_app_role_menu_item` DISABLE KEYS */;
+INSERT INTO `sys_app_role_menu_item` VALUES (1,'menu_admin_user','Utilisateurs','المستخدمين','application.m_ref.ihm.FrmUser',1,2,1,0,'Users'),(2,'menu_admin_tier','Tiers','الغير','application.m_ref.ihm.FrmFinTiers',1,3,1,0,'UserCircleO'),(3,'menu_admin_exrc','Exercice','السنة المالية','application.m_cpt.ihm.FrmOpFinExrc',1,6,1,0,'CalendarCheckO'),(4,'menu_admin_caisse','Caisses','الصناديق','application.m_css.ihm.frmCaisse',1,8,1,0,'Archive'),(5,'menu_admin_gestion_seances','Gestion de séances','تسيير الحصص','application.m_adm.ihm.FrmAdmGestionSeancecs',0,7,1,0,'HourglassEnd'),(6,'menu_admin_backDb','Sauvegarder les données','حفظ البيانات','application.m_report.ihm.frmBackupDb',1,11,1,0,'FloppyO'),(7,'menu_admin_deconnexion','Déconnexion','خروج','method;;restartApp',0,12,1,0,'SignOut'),(8,'menu_admin_exit','Exit','مغادرة','method;;quitApp',0,13,1,0,'ExternalLink'),(9,'menu_fact_new_cb','Point de vente','فاتورة جديدة','application.m_cm.sm_fct.ihm.FrmPosPalm$$application.m_cm.sm_fct.ihm.FrmPosPalmPh',1,1,2,0,'FolderOpen'),(10,'menu_stock_correct','Correction du stock','تصحيح المخزون','application.sm_stock.ihm.FrmCorrectStckLot$$application.sm_stock.ihm.FrmCorrectStckLotPh',0,5,5,0,'Cogs'),(11,'menu_fact_list','Liste de factures','قائمة الفواتير','application.m_cm.sm_fct.ihm.frmListFacture',0,2,2,0,'List'),(12,'menu_cmd_new','Commandes','طلبيات','application.m_cm.sm_cmd.ihm.frmAlimentation$$application.m_cm.sm_cmd.ihm.frmAlimentation',0,1,3,0,'List'),(13,'menu_stock_inv','Inventaire','جرد','application.m_misc.ihm.FrmInventaire',0,6,5,0,'Barcode'),(14,'menu_etat_grand_livre','Grand livre','دفتر الأستاذ','application.m_cpt.ihm.FrmEtatsCpt',0,7,13,0,'Book'),(16,'menu_stock_famille_prd','Catégories d\'articles&&Forme médicaments','قوائم المنتجات&&نوع الأدوية','application.m_ref.ihm.FrmFamillePrd$$application.m_ref.ihm.FrmForme',0,1,5,0,'Cubes'),(17,'menu_stock_produit','Liste d\'articles&&Médicaments','المنتجات&&الأدوية','application.m_ref.ihm.FrmProduits$$application.m_ref.ihm.FrmProduits',0,2,5,0,'Cube'),(18,'menu_stock_pertPreemp','Perte et péremption','الخسارة ونهاية الصلاحية','application.m_cm.sm_stock.ihm.frmPerteStock',0,8,5,0,'ThermometerEmpty'),(19,'menu_stock_suivi','Suivi du stock','حركة المخزون','application.m_cm.sm_stock.ihm.FrmSuiviStock',0,9,5,0,'BarChart'),(20,'menu_promotion_new','Nouvelle promotion','تخفيضات جديدة','application.m_pro.ihm.frmPromoManager',0,13,5,0,'PlusCircle'),(21,'menu_promotion_list','Liste des promotions','قائمة التخفيضات','application.m_pro.ihm.frmListPromo',0,14,5,0,'Gift'),(22,'menu_suivi_stat','Suivi des caisses','متابعة الصناديق','application.m_suivi.ihm.FrmCaisse',0,1,13,0,'Archive'),(23,'menu_compta_consult_cpte','Suivi des comptes','متابعة الحسابات','application.m_cpt.ihm.FrmGestionCpt',0,1,8,0,'BarChart'),(24,'menu_compta_od','Opérations diverses','عمليات مختلفة','application.m_cpt.ihm.FrmOD',0,3,8,0,'WindowRestore'),(25,'menu_compta_modif_ecriture','Modifier une écriture','تغيير عملية','application.m_cpt.ihm.FrmUpdateOp',0,4,8,0,'PencilSquareO'),(26,'menu_compta_recu','Versement','دفع','application.m_cpt.ihm.FrmOD',0,5,8,0,'LevelUp'),(27,'menu_compta_depense','Retrait','سحب','application.m_cpt.ihm.FrmOD',1,6,8,0,'LevelDown'),(28,'menu_compta_create_cpt','Créer un compte','إنشاء حساب','application.m_cpt.ihm.FrmCreateCpt',0,7,8,0,'UserPlus'),(29,'menu_compta_immo','Immobilisations','أصول','application.m_cm.sm_stock.ihm.frmImmAmort',0,8,8,0,'Building'),(30,'menu_admin_user_grp','Profils','صلاحيات','application.m_ref.ihm.FrmAdminGroupes',0,1,1,0,'User'),(31,'menu_stock_imp_prix_code','Imprimer liste prix et codes barres','طباعة قائمة الأسعار والكود ','application.m_report.ihm.frmPrintListProduits',0,7,5,0,'Print'),(33,'menu_suivi_gst_carte','Suivi des cartes','متابعة البطاقات','application.m_suivi.ihm.FrmSuiviTrRemise',0,4,13,0,'IdCardO'),(35,'menu_admin_entete','Informations de l\'entreprise','معلومات المؤسسة','application.m_general.ihm.FrmCmpnyInfo',0,4,1,0,'InfoCircle'),(36,'menu_compta_journ','Journaux','اليوميات','application.m_cpt.ihm.FrmJournal',1,2,8,0,'CalendarMinusO'),(37,'menu_stock_vide_preemp','Seuil produits et Date péremption',' الكمية الدنيى و انتهاء الصلاحية','application.m_misc.ihm.FrmSuiviStockDtPreemp',0,10,5,0,'Flag'),(38,'menu_admin_pays','Vide&&Provenance','المصدر&&Vide','application.m_ref.ihm.FrmPays',0,9,1,0,'FolderOpen'),(39,'menu_admin_labo','Vide&&Laboratoire','المختبر&&Vide','application.m_ref.ihm.FrmLabo',1,10,1,0,'FolderOpen'),(40,'menu_etat_balance','Bilan et balance des comptes','النتيجة و ميزان الحسابات','application.rpt.m_cpt.ihm.FrmEtats',1,8,13,0,'BalanceScale'),(41,'menu_etat_journal','Journal','تقرير اليوميات','application.m_cpt.ihm.FrmEtatsCpt',0,6,13,0,'CalendarMinusO'),(42,'menu_admin_param','Paramètres de configuration','عناصر التحكم','application.m_general.ihm.FrmConfigParams',1,5,1,0,'Cogs'),(43,'menu_stock_comp_inv_stock','Stock calculé et inventaire','المخزون والجرد','application.rpt.m_misc.ihm.FrmInvComp',0,11,5,0,'SortAlphaAsc'),(44,'menu_fact_mng','Gestion des factures','تسيير الفواتير','application.m_css.ihm.FrmMngFactures',1,3,2,0,'FolderOpen'),(45,'menu_fact_paie','Paiement de Factures','دفع الفواتير','application.m_pay.ihm.FrmPaieFct',0,4,2,0,'Money'),(46,'menu_cmd_paie','Paiement de Commandes','دفع الطلبيات','application.m_pay.ihm.FrmPaieCmd',0,2,3,0,'Money'),(47,'menu_suivi_paie','Suivi de paie','متابعة الدفع','application.m_suivi.ihm.FrmTblEcheances',0,2,13,0,'Money'),(48,'menu_rub_bilan','Rubriques bilan','اقسام الحصيلة','application.m_cpt.ihm.FrmPreviewRubriques',0,9,8,0,'Book'),(49,'menu_aide_contact','Contacter  GTI','الاتصال بالشركة','application.m_general.ihm.FrmContactGTI',0,1,9,0,'AddressCard'),(50,'menu_aide_about','A propos de GTI-Palm  ','حول البرنامج','application.m_general.ihm.FrmAbout',0,2,9,0,'InfoCircle'),(52,'menu_statistiques_dashboard','Les tableaux de bord','لوحات البيانات','application.m_dashboard.ihm.FrmDashbordPlus',0,9,13,0,'Tachometer'),(53,'menu_services_famSrv','Catégories de services','قوائم الخدمات','application.m_services.ihm.FrmFamilleService',0,3,5,0,'Tags'),(54,'menu_services_srvs','Services','الخدمات','application.m_services.ihm.FrmServices',1,4,5,0,'Tag'),(55,'menu_admin_alerts','Les Alertes ','التنبيهات','application.m_adm.ihm.FrmAlerts',0,11,1,0,'FolderOpen'),(56,'menu_stock_prod','Gestion de la production','الانتاج','application.m_cm.sm_production.ihm.FrmProduction',1,12,5,0,'Industry'),(57,'menu_admin_global_role','Restriction des droits','تقييد الصلاحيات','application.m_adm.ihm.FrmGestionDroitsGlobal',0,2,1,0,'Lock'),(58,'menu_suivi_ventes','Suivi de ventes','متابعة الفواتير','application.m_suivi.ihm.FrmJournalVentes',0,3,13,0,'CartPlus'),(59,'menu_depots_gestion_dp','Gestion des Dépôts','تسيير المخازن','application.m_depot.ihm.FrmGestionDepots',0,1,12,0,'Sitemap'),(60,'menu_depots_transferts_dp','Transfert inter-dépôts','التحويلات','application.m_depot.ihm.FrmGestionTransferts',0,2,12,0,'Exchange'),(61,'menu_depots_sites','Gestion des sites','المواقع','application.m_depot.ihm.FrmGestionSites',0,3,12,0,'MapMarker'),(62,'menu_admin_zone','Gestion des zones','المناطق','application.m_ref.ihm.FrmZone',0,0,1,4,'Globe'),(63,'menu_fact_fctAm','Facture groupée','الفواتير المجمعة حسب المؤمن','application.m_suivi.ihm.FrmFctAm',0,0,2,4,'FolderOpen'),(64,'menu_compta_se','Exportation vers SAGE','تصدير العمليات','application.m_sage.ihm.FrmExportOps',0,10,8,0,'Share'),(65,'menu_validation_fct','Validation des factures','تفعيل الفاتورات','application.m_cm.sm_fct.ihm.FrmValidationFct',0,6,2,0,'CheckSquareO'),(66,'menu_fact_list_liv_part','Livraison partielle','تسليم الجزئي','application.m_cm.sm_fct.ihm.frmListFactureLp',0,3,2,0,'PieChart'),(67,'menu_admin_emp','Gestion des emplacements ','الأماكن','application.m_ref.ihm.frmEmp',0,0,1,4,'Archive'),(68,'menu_admin_dash','Synchronisation ','مزامنة','application.m_webdash.m_login.ihm.frmdashLogin',0,0,1,4,'Refresh'),(69,'menu_compta_gtiCompta','Exportation vers GtiCompta','تصدير العمليات','application.m_webdash.m_login.ihm.FrmExportGtiCompta',0,11,8,0,'Exchange'),(70,'Suivi_production','Suivi de production','متابعة الإتناج','application.m_cm.sm_production.ihm.FrmSuiviProduction',0,13,5,0,'AreaChart'),(71,'menu_chart_dashboard','Tableau de bord Express ','لوحات البيانات','application.m_dashboard.ihm.dashBordChart',0,10,13,0,'PieChart'),(72,'menu_admin_ville','Gestion de villes','المدن','application.m_ref.ihm.frmVille',0,0,1,0,'Globe'),(73,'menu_admin_TauxPv','Gestion des taux de PV','ادارة نسبة سعر البيع','application.m_ref.ihm.FrmTauxPv',0,0,1,0,'PieChart'),(74,'menu_cmd_option','Option de commande','خيارات الطلبية','application.m_cm.sm_cmd.ihm.frmCmdOption',0,0,3,0,'Cogs'),(75,'menu_fact_clients','Etat des factures d’un client','فواتير زبون','application.m_cm.sm_fct.ihm.FrmListFactureClient',0,0,2,0,'User'),(76,'menu_suivi_prix','Suivi des Prix','متابعة الأسعار','application.m_suivi.ihm.FrmSuiviPrix',0,11,13,0,'Money'),(77,'menu_import_Ops','Import/Export','استيراد','application.impexp.ui.FrmImport',0,0,14,0,'Exchange'),(78,'menu_Chiffre_Affaire','Chiffre d\'affaires','البيانات','application.m_suivi.ihm.FrmCA',0,11,13,0,'PieChart'),(79,'menu_Export','Export','تصدير','application.impexp.ui.FrmExp',0,1,14,0,'Exchange'),(80,'menu_Export_Fct_Details','Export des Factures','تصدير الفواتير','application.m_suivi.ihm.FrmExprtFctDetails',0,11,13,0,'Exchange'),(81,'menu_paiement_electr','Paiement électronique','الدفع الإلكتروني','application.m_cpt.ihm.FrmPaieElectrMng',0,0,8,0,'Money');
+/*!40000 ALTER TABLE `sys_app_role_menu_item` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2026-02-16 19:11:18
