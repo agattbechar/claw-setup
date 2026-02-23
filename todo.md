@@ -8,7 +8,20 @@
 
 | Priority | Task | Status | Owner | Notes |
 |----------|------|--------|-------|-------|
-| | | | | |
+| Critical | Viora AI Automation (Phase 1) | In Progress | Bechar + Claw | AGENCY LAUNCHPAD: Automate Viora as proof of concept |
+| High | Define agency scope & positioning | Todo | Bechar + Claw | Based on Viora results |
+| High | Identify first 3 potential clients | Todo | Bechar | Beyond Viora, same vertical |
+| Medium | Article dissection backlog | Active | Claw | Process remaining bookmarked articles |
+| Low | NUQI Phase 1 | Paused | — | Resume when Viora stable |
+
+### Viora Context (from 2026-02-23 session)
+- **What:** Wellness/dermocosmetic shop (La Roche Posay, Vichy, CeraVe, Bioderma, etc.)
+- **Owner:** Bechar + his mom
+- **Status:** Survived while Bechar was away, now needs development
+- **Data:** 58k+ lines of product inventory (SKUs, margins, stock levels)
+- **Problem:** Bechar wants to help mom without it consuming him, needs balance with personal projects
+- **Next:** Discover what mom actually needs, what "do good" means, current time sinks
+- **Blocker:** Need specifics from Bechar on daily tasks, mom's demands, automation opportunities
 
 **Status:** `todo` → `in-progress` → `blocked` → `done`
 
