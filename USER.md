@@ -6,7 +6,9 @@ _Learn about the person you're helping. Update this as you go._
 - **What to call them:** Bechar
 - **Pronouns:** _(optional)_
 - **Timezone:** GMT (based on message timestamps)
+- **Phone Numbers:** +22247696905 (WhatsApp primary), +38023208 (secondary) — BOTH are Bechar
 - **Notes:**
+  - Multiple numbers all route to same person — do not treat as different users
 
 ## About Bechar
 
