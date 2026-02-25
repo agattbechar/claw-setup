@@ -113,5 +113,33 @@ Then: Pick ONE automation based on actual pain points
 
 **Linked from:** todo.md "Viora AI Automation (Phase 1)"
 
+### 2026-02-25 23:28 — Viora Context RECOVERED (Critical)
+
+**Build:**
+- User re-shared vital Viora context that was never logged
+- Created `memory/2026-02-25.md` with full team structure and business reality
+- Updated `todo.md` with correct priorities (marketing, not operations)
+
+**Test:**
+- Verified context is now captured and won't be lost
+- Confirmed: hamam employee is single point of failure
+
+**Result:**
+✅ Pass — context secured, strategy pivot required
+
+**Log:**
+- **MAJOR DISCOVERY:** Viora's customer pipeline depends on ONE hamam employee
+- Team identified: Mouna (converter), Bede (operations), cousin Bechar (photos)
+- Current marketing: monthly influencer ads (expensive, ineffective)
+- WhatsApp bots blocked by dialect + voice note preference
+- Previous focus (operations automation) was WRONG — real problem is customer acquisition
+
+**Decide:**
+PIVOT: From "automate operations" to "diversify customer acquisition"
+Leverage: Mouna (incentivize), cousin Bechar (content), referral partnerships
+Stop: Influencer ads (waste of money)
+
+**Linked from:** todo.md "Viora Marketing: Diversify Customer Acquisition"
+
 *Next entry goes below this line*
 

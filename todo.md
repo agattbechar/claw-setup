@@ -8,27 +8,31 @@
 
 | Priority | Task | Status | Owner | Notes |
 |----------|------|--------|-------|-------|
-| Critical | Viora AI Automation (Phase 1) | **Blocked** | Bechar + Claw | Need mom's workflow details to proceed |
-| High | Define agency scope & positioning | Todo | Bechar + Claw | Based on Viora results |
+| Critical | **Viora Marketing: Diversify Customer Acquisition** | **In Progress** | Bechar + Claw | Break dependence on single hamam employee |
+| High | Build visual content engine (Bechar photos) | Todo | Bechar + Cousin Bechar | Leverage existing asset, reduce ad spend |
+| High | Formalize/incentivize Mouna | Todo | Bechar + Mom | Convert her into growth partner |
 | High | Identify first 3 potential clients | Todo | Bechar | Beyond Viora, same vertical |
 | Medium | Article dissection backlog | Active | Claw | Process remaining bookmarked articles |
 | Low | NUQI Phase 1 | Paused | — | Resume when Viora stable |
-| **New** | **Document mom's daily workflow** | **Todo** | **Bechar** | **Observe: top 3 time sinks, pain points, decisions** |
 
-### Viora Context (from 2026-02-23 session)
-- **What:** Wellness/dermocosmetic shop (La Roche Posay, Vichy, CeraVe, Bioderma, etc.)
-- **Owner:** Bechar + his mom
-- **Status:** Survived while Bechar was away, now needs development
-- **Data:** 58k+ lines of product inventory (SKUs, margins, stock levels)
-- **Problem:** Bechar wants to help mom without it consuming him, needs balance with personal projects
-- **Next:** Discover what mom actually needs, what "do good" means, current time sinks
-- **Blocker:** Need specifics from Bechar on daily tasks, mom's demands, automation opportunities
-- **Sub-tasks:**
-  1. [ ] Observe mom's daily workflow (1-2 days)
-  2. [ ] Document top 3 time-consuming tasks
-  3. [ ] Identify decisions she makes daily/weekly
-  4. [ ] Note current manual processes (ordering, stock, reporting)
-  5. [ ] Clarify what "automated" means to her
+### Viora Context (UPDATED 2026-02-25)
+- **What:** Dermocosmetic + supplements + misc items shop in Nouakchott
+- **Owner:** Bechar + his mom (started months ago)
+- **Status:** Survived Bechar's absence (gambling addiction), stable returns, unorganized operations
+- **Data:** 58k+ product lines
+- **The Team:**
+  - **Mouna:** Excellent converter, smart, but lazy/no initiative
+  - **Bede:** Operations guy (counter, restocking), follows orders well
+  - **Bechar (cousin):** Good photographer, unmotivated but moldable
+  - **Mom:** Owner/manager
+- **Customer Source:** Hamam next door (employee sends customers for gifts/credit) — **SINGLE POINT OF FAILURE**
+- **Current Marketing:** Monthly influencer ads — expensive, ineffective
+- **REAL PROBLEM:** Dependence on one referral source + underleveraged team
+- **Next:** 
+  1. [ ] Diversify referral partners (other hamams, salons, gyms)
+  2. [ ] Incentivize Mouna (stake in growth?)
+  3. [ ] Deploy visual content (cousin Bechar photos)
+  4. [ ] Build customer retention (reduce hamam dependence)
 
 **Status:** `todo` → `in-progress` → `blocked` → `done`
 
