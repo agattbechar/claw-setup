@@ -8,11 +8,12 @@
 
 | Priority | Task | Status | Owner | Notes |
 |----------|------|--------|-------|-------|
-| Critical | Viora AI Automation (Phase 1) | In Progress | Bechar + Claw | AGENCY LAUNCHPAD: Automate Viora as proof of concept |
+| Critical | Viora AI Automation (Phase 1) | **Blocked** | Bechar + Claw | Need mom's workflow details to proceed |
 | High | Define agency scope & positioning | Todo | Bechar + Claw | Based on Viora results |
 | High | Identify first 3 potential clients | Todo | Bechar | Beyond Viora, same vertical |
 | Medium | Article dissection backlog | Active | Claw | Process remaining bookmarked articles |
 | Low | NUQI Phase 1 | Paused | — | Resume when Viora stable |
+| **New** | **Document mom's daily workflow** | **Todo** | **Bechar** | **Observe: top 3 time sinks, pain points, decisions** |
 
 ### Viora Context (from 2026-02-23 session)
 - **What:** Wellness/dermocosmetic shop (La Roche Posay, Vichy, CeraVe, Bioderma, etc.)
@@ -22,6 +23,12 @@
 - **Problem:** Bechar wants to help mom without it consuming him, needs balance with personal projects
 - **Next:** Discover what mom actually needs, what "do good" means, current time sinks
 - **Blocker:** Need specifics from Bechar on daily tasks, mom's demands, automation opportunities
+- **Sub-tasks:**
+  1. [ ] Observe mom's daily workflow (1-2 days)
+  2. [ ] Document top 3 time-consuming tasks
+  3. [ ] Identify decisions she makes daily/weekly
+  4. [ ] Note current manual processes (ordering, stock, reporting)
+  5. [ ] Clarify what "automated" means to her
 
 **Status:** `todo` → `in-progress` → `blocked` → `done`
 
@@ -56,4 +63,4 @@
 
 ---
 
-*Last updated: 2026-02-22*
+*Last updated: 2026-02-25*
