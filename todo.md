@@ -12,6 +12,7 @@
 | High | Build visual content engine (Bechar photos) | Todo | Bechar + Cousin Bechar | Leverage existing asset, reduce ad spend |
 | High | Formalize/incentivize Mouna | Todo | Bechar + Mom | Convert her into growth partner |
 | High | Identify first 3 potential clients | Todo | Bechar | Beyond Viora, same vertical |
+| **High** | **Build Viora Avatar Meta-Skill** | **Todo** | **Bechar + Claw** | **After 3-5 videos: encode methodology, not just prompts (see Machina analysis)** |
 | Medium | Article dissection backlog | Active | Claw | Process remaining bookmarked articles |
 | Low | NUQI Phase 1 | Paused | — | Resume when Viora stable |
 
@@ -35,6 +36,13 @@
   4. [ ] Build customer retention (reduce hamam dependence)
 
 **Status:** `todo` → `in-progress` → `blocked` → `done`
+
+### Strategic Context (Machina Meta-Skills — 2026-02-26)
+**New understanding:** Building skills that encode reasoning > downloading templates
+- **Viora Avatar Meta-Skill:** After creating 3-5 videos, document YOUR methodology (not generic prompts)
+- **Contrarian Frame:** Engineer AWAY from generic AI content patterns
+- **3 Layers:** Trigger system + Thinking architecture + Verification gate
+- **Full Analysis:** `ANALYSIS_MACHINA_MetaSkills.md`
 
 ---
 
@@ -67,4 +75,4 @@
 
 ---
 
-*Last updated: 2026-02-25*
+*Last updated: 2026-02-26*
