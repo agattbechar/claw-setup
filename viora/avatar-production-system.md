@@ -9,59 +9,74 @@
 
 ## Character Reference (The "Seed")
 
-**MASTER PROMPT — Copy this exactly for every frame:**
+**METHOD: Visual Reference (Better than text prompts)**
 
+ChatGPT has saved two reference images:
+1. **Portrait** — Her face/base appearance
+2. **Store** — Her standing in Viora store
+
+**New Workflow:**
+- Upload BOTH reference images to ChatGPT
+- Say: "Create [scene description], using these as character reference"
+- ChatGPT maintains consistency via visual reference, not text
+
+**Fallback (if references fail):**
+Use the master text prompt in [Appendix A] below.
+
+---
+
+## Frame Generation Prompts (Visual Reference Method)
+
+### The Formula:
+
+1. **Upload both reference images** (portrait + store)
+2. **Type:**
 ```
-Ultra-realistic commercial photography of a Mauritanian–Maghrebi–Sahrawi woman in her early to mid 30s.
+Using the woman in these reference images, create a new scene:
 
-Bright light skin tone.
-Neutral undertone (not warm, not golden, not orange).
-Natural skin texture with visible pores.
-No airbrushing. No smoothing. No artificial glow.
+SCENE: [describe the setting]
+ACTION: [what she's doing]
+EXPRESSION: [mood/emotion]
+CAMERA: [framing, angle]
 
-Lovable, pretty, naturally attractive presence.
-Soft, balanced facial harmony.
-No exaggerated symmetry.
-No influencer beauty standards.
-
-Calm, intelligent, trustworthy expression.
-Subtle natural smile.
-Gentle eye contact with camera.
-
-She is wearing a traditional Mauritanian melhfa.
-Authentically draped.
-Soft flowing fabric wrapped around head and shoulders.
-Luxury neutral tone (cream, soft ivory, pale sand).
-Clearly a Mauritanian melhfa — not a generic scarf.
-Hair fully covered.
-
-Setting: softly blurred luxury parapharmacy interior.
-Premium clinical-beauty environment.
-Warm-neutral clinical lighting (not golden).
-
-Camera:
-Chest-up framing.
-Static camera.
-Portrait composition.
-85mm lens look.
-
-Lighting:
-Soft diffused studio lighting.
-Bright but natural exposure.
-No dramatic shadows.
-No glamour lighting.
-
-Style:
-High-end dermatology campaign realism.
-Studio-quality natural photography.
-No fashion editorial look.
-No influencer styling.
+Maintain exact same woman: face, skin tone, melhfa style, overall look.
 ```
 
-**Character Consistency Trick:**
-- Use this EXACT prompt for every frame (only change SETTING and ACTION)
-- The details (skin texture, lighting specs, "no influencer standards") prevent drift
-- Save the master image as reference, but the prompt is your anchor
+### Example — Start Frame (Morning Routine):
+```
+[Upload reference images]
+
+Using the woman in these reference images, create a new scene:
+
+SCENE: Modern bathroom counter, soft morning light from window, white marble
+ACTION: Looking in mirror, applying sunscreen to face
+EXPRESSION: Peaceful morning routine, focused
+CAMERA: Chest-up, slight side angle
+```
+
+### Example — End Frame (At Viora Store):
+```
+[Upload reference images]
+
+Using the woman in these reference images, create a new scene:
+
+SCENE: Viora store interior, product shelves visible, bright lighting
+ACTION: Holding product, smiling at camera (recommending it)
+EXPRESSION: Confident, satisfied, trustworthy
+CAMERA: Slightly wider to show store environment
+```
+
+### Example — Product Showcase:
+```
+[Upload reference images]
+
+Using the woman in these reference images, create a new scene:
+
+SCENE: Soft neutral background (cream/beige), product photography style
+ACTION: Holding [PRODUCT] toward camera, presenting it
+EXPRESSION: Warm, genuine recommendation
+CAMERA: Product and face both visible
+```
 
 ---
 
@@ -153,15 +168,17 @@ Warm lighting, professional cinematography.
 
 ---
 
-## Workflow (Each Video)
+## Workflow (Each Video) — Visual Reference Method
 
 1. **Pick concept** from Content Bank
-2. **Generate Start Frame** in ChatGPT (use template, save image)
-3. **Generate End Frame** in ChatGPT (same process, save image)
-4. **Upload to Kling** — Start + End + Motion prompt
-5. **Download video**
-6. **Edit** — Add voiceover/text, music, Viora branding
-7. **Post** — TikTok/Snap/Insta with CTA
+2. **Upload reference images** to ChatGPT (portrait + store)
+3. **Generate Start Frame** — Describe scene, ChatGPT uses visual reference
+4. **Generate End Frame** — Same process, different scene
+5. **Download both frames**
+6. **Upload to Kling** — Start + End + Motion prompt
+7. **Download video**
+8. **Edit** — Add voiceover/text, music, Viora branding
+9. **Post** — TikTok/Snap/Insta with CTA
 
 ---
 
@@ -187,6 +204,65 @@ Warm lighting, professional cinematography.
 
 **Working combo #2:**
 - ...
+
+---
+
+## Appendix A: Master Text Prompt (Fallback)
+
+**Use this only if visual reference method fails:**
+
+```
+Ultra-realistic commercial photography of a Mauritanian–Maghrebi–Sahrawi woman in her early to mid 30s.
+
+Bright light skin tone.
+Neutral undertone (not warm, not golden, not orange).
+Natural skin texture with visible pores.
+No airbrushing. No smoothing. No artificial glow.
+
+Lovable, pretty, naturally attractive presence.
+Soft, balanced facial harmony.
+No exaggerated symmetry.
+No influencer beauty standards.
+
+Calm, intelligent, trustworthy expression.
+Subtle natural smile.
+Gentle eye contact with camera.
+
+She is wearing a traditional Mauritanian melhfa.
+Authentically draped.
+Soft flowing fabric wrapped around head and shoulders.
+Luxury neutral tone (cream, soft ivory, pale sand).
+Clearly a Mauritanian melhfa — not a generic scarf.
+Hair fully covered.
+
+Setting: softly blurred luxury parapharmacy interior.
+Premium clinical-beauty environment.
+Warm-neutral clinical lighting (not golden).
+
+Camera:
+Chest-up framing.
+Static camera.
+Portrait composition.
+85mm lens look.
+
+Lighting:
+Soft diffused studio lighting.
+Bright but natural exposure.
+No dramatic shadows.
+No glamour lighting.
+
+Style:
+High-end dermatology campaign realism.
+Studio-quality natural photography.
+No fashion editorial look.
+No influencer styling.
+
+VARIATION:
+- Setting: [your scene]
+- Action: [what she's doing]
+- Expression: [mood]
+- Camera angle: [if different]
+```
 
 ---
 
