@@ -155,7 +155,7 @@ Warm lighting, professional cinematography.
 
 | # | Concept | Start Frame | End Frame | Kling Prompt | Status |
 |---|---------|-------------|-----------|--------------|--------|
-| 1 | Morning routine → Store | Bathroom, applying cream | At Viora counter | Walk from home to store | 🔄 IN PROGRESS |
+| 1 | In-store product discovery → Recommendation | In Viora store holding product (warm, natural expression) | Deeper in store, gesturing/confident | Walking through store engaging with camera | 🔄 IN PROGRESS |
 | 2 | Product recommendation | Close-up with product | Happy with results | Show transformation/confidence | ☐ |
 | 3 | Trend-jack (dance/audio) | Ready position | Dance move | Smooth dance transition | ☐ |
 | 4 | Day in Nouakchott | Tea at home | Shopping at Viora | Walking through neighborhood | ☐ |
@@ -165,6 +165,31 @@ Warm lighting, professional cinematography.
 - ☐ Not started
 - 🔄 In progress
 - ✅ Done
+
+---
+
+## Current Session Status (2026-02-26 02:00)
+
+**What We Did:**
+- Refined character consistency method: Visual reference (upload 3 images: portrait + store interior + character in store)
+- Video #1 concept: Avatar discovers product in Viora store → walks deeper → recommends it
+- Tested start frame expressions: First too exaggerated, second (warmer/natural) approved
+- Created detailed prompts for Start Frame, End Frame, and Kling motion
+
+**Where We Are:**
+- Start frame expression: ✅ Approved (warm, natural, genuine smile)
+- Start frame generation: ⏳ Pending final generation with approved expression
+- End frame: ⏳ Not generated yet (needs: same character, deeper in store, more confident pose)
+- Kling video: ⏳ Waiting for both frames
+- Voiceover decision: ⏳ Pending (French? Hassaniya? Text only?)
+
+**Next Steps When You Return:**
+1. Generate Start Frame with final approved expression (reference image saved)
+2. Generate End Frame (character deeper in store, gesturing, confident)
+3. Upload both to Kling 3.0 Pro
+4. Generate video
+5. Decide voiceover approach
+6. Edit and post
 
 ---
 
