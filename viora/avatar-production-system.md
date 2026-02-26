@@ -9,47 +9,112 @@
 
 ## Character Reference (The "Seed")
 
-**Base Description (ALWAYS include this):**
+**MASTER PROMPT — Copy this exactly for every frame:**
+
 ```
-Mauritanian woman, 30-35 years old, wearing traditional blue/teal melahfa, 
-dark hair, elegant features, natural makeup, warm expression, 
-modern professional setting, soft lighting, high quality photograph
+Ultra-realistic commercial photography of a Mauritanian–Maghrebi–Sahrawi woman in her early to mid 30s.
+
+Bright light skin tone.
+Neutral undertone (not warm, not golden, not orange).
+Natural skin texture with visible pores.
+No airbrushing. No smoothing. No artificial glow.
+
+Lovable, pretty, naturally attractive presence.
+Soft, balanced facial harmony.
+No exaggerated symmetry.
+No influencer beauty standards.
+
+Calm, intelligent, trustworthy expression.
+Subtle natural smile.
+Gentle eye contact with camera.
+
+She is wearing a traditional Mauritanian melhfa.
+Authentically draped.
+Soft flowing fabric wrapped around head and shoulders.
+Luxury neutral tone (cream, soft ivory, pale sand).
+Clearly a Mauritanian melhfa — not a generic scarf.
+Hair fully covered.
+
+Setting: softly blurred luxury parapharmacy interior.
+Premium clinical-beauty environment.
+Warm-neutral clinical lighting (not golden).
+
+Camera:
+Chest-up framing.
+Static camera.
+Portrait composition.
+85mm lens look.
+
+Lighting:
+Soft diffused studio lighting.
+Bright but natural exposure.
+No dramatic shadows.
+No glamour lighting.
+
+Style:
+High-end dermatology campaign realism.
+Studio-quality natural photography.
+No fashion editorial look.
+No influencer styling.
 ```
 
 **Character Consistency Trick:**
-- Save 2-3 "master" images that work
-- Use them as style reference in ChatGPT
-- Or describe the SAME woman every time with identical details
+- Use this EXACT prompt for every frame (only change SETTING and ACTION)
+- The details (skin texture, lighting specs, "no influencer standards") prevent drift
+- Save the master image as reference, but the prompt is your anchor
 
 ---
 
 ## Frame Generation Prompts
 
-### Template Structure:
+### How to Build Frames (The Formula):
+
+**START with the MASTER PROMPT above**
+
+**THEN add these variables at the END:**
 ```
-CHARACTER: [Base description above]
-SETTING: [Location — home, store, street, etc.]
-ACTION: [What she's doing — applying cream, holding product, walking, etc.]
-EXPRESSION: [Happy, focused, surprised, etc.]
-CAMERA: [Close-up, medium shot, etc.]
+...
+[Master prompt continues]
+...
+
+VARIATION:
+- Setting: [describe the specific location]
+- Action: [what is she doing in this moment]
+- Expression: [mood/emotion for this scene]
+- Camera angle: [if different from chest-up portrait]
 ```
 
 ### Example — Start Frame (Morning Routine):
 ```
-CHARACTER: Mauritanian woman, 30-35, traditional blue melahfa, elegant, natural makeup
-SETTING: Modern bathroom, morning light, clean aesthetic
-ACTION: Looking in mirror, holding La Roche Posay sunscreen
-EXPRESSION: Fresh, ready for the day, slight smile
-CAMERA: Medium shot, eye level
+[MASTER PROMPT — copy entire block above]
+
+VARIATION:
+- Setting: Modern bathroom counter, soft morning light from window, clean white marble aesthetic
+- Action: Looking in mirror while applying La Roche Posay sunscreen to her face
+- Expression: Fresh, focused on her routine, peaceful morning mood
+- Camera angle: Slight side angle, still chest-up
 ```
 
 ### Example — End Frame (At Viora Store):
 ```
-CHARACTER: Same woman, same outfit
-SETTING: Viora store interior, shelves with products visible
-ACTION: Handing product to cashier or examining shelf
-EXPRESSION: Satisfied, confident
-CAMERA: Medium shot, store environment visible
+[MASTER PROMPT — copy entire block above]
+
+VARIATION:
+- Setting: Viora store interior, shelves stocked with skincare products in background, bright clean lighting
+- Action: Examining a product on the shelf, holding it up to read the label
+- Expression: Satisfied, confident, knowledgeable about skincare
+- Camera angle: Slightly wider to show store environment
+```
+
+### Example — Product Showcase Frame:
+```
+[MASTER PROMPT — copy entire block above]
+
+VARIATION:
+- Setting: Soft neutral background (cream/beige), product photography style
+- Action: Holding [PRODUCT NAME] toward camera, presenting it
+- Expression: Warm, genuine recommendation, trustworthy
+- Camera angle: Straight on, product and face both visible
 ```
 
 ---
@@ -75,11 +140,16 @@ Warm lighting, professional cinematography.
 
 | # | Concept | Start Frame | End Frame | Kling Prompt | Status |
 |---|---------|-------------|-----------|--------------|--------|
-| 1 | Morning routine → Store | Bathroom, applying cream | At Viora counter | Walk from home to store | ☐ |
+| 1 | Morning routine → Store | Bathroom, applying cream | At Viora counter | Walk from home to store | 🔄 IN PROGRESS |
 | 2 | Product recommendation | Close-up with product | Happy with results | Show transformation/confidence | ☐ |
 | 3 | Trend-jack (dance/audio) | Ready position | Dance move | Smooth dance transition | ☐ |
 | 4 | Day in Nouakchott | Tea at home | Shopping at Viora | Walking through neighborhood | ☐ |
 | 5 | | | | | ☐ |
+
+**Legend:**
+- ☐ Not started
+- 🔄 In progress
+- ✅ Done
 
 ---
 
