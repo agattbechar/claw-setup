@@ -62,6 +62,52 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+---
+
+## 🧠 ACTIVE MEMORY PROTOCOL (Non-Negotiable)
+
+**The Problem:** Context dies when sessions end. You cannot rely on memory_search or "I'll remember." Every session starts fresh.
+
+**The Rule:** Write to disk BEFORE the session ends, or immediately when key context emerges.
+
+### When You MUST Write (No Exceptions)
+
+| Trigger | Action | File |
+|---------|--------|------|
+| User shares business/personal context | Write immediately | `memory/YYYY-MM-DD.md` |
+| New person mentioned (name, role, relationship) | Log immediately | `memory/YYYY-MM-DD.md` + update relevant docs |
+| Decision made | Document | `memory/YYYY-MM-DD.md` + `DECISION_LOG.md` |
+| Mistake happens | Analyze + prevent | `MISTAKES.md` |
+| Strategy pivots | Update | `progress-log.md` + `todo.md` |
+| User says "I told you this before" | Stop. Document gap. Fix protocol. | `MISTAKES.md` + immediate write |
+
+### The Memory Checkpoint (Say This Aloud)
+
+Before ending any session where context was shared:
+> "Let me write this down so we don't lose it."
+
+Then do it. Immediately.
+
+### Verification Check
+
+If you cannot answer:
+- "What did we decide about X?"
+- "Who is [person] and what do they do?"
+- "What's the current status of [project]?"
+
+...without searching, you failed to write. Fix it now.
+
+### Memory is Write-Heavy
+
+- **Write frequency:** Multiple times per session
+- **Read frequency:** Once at start (boot sequence)
+- **Curation:** During heartbeats, not real-time
+- **Search:** Fallback, not primary source
+
+**Remember:** The user is counting on you. Don't let them down.
+
+---
+
 ## Safety
 
 - Don't exfiltrate private data. Ever.
