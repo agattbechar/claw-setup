@@ -168,28 +168,45 @@ Warm lighting, professional cinematography.
 
 ---
 
-## Current Session Status (2026-02-26 02:00)
+## Current Session Status (2026-02-26 → 2026-03-04 UPDATE)
 
-**What We Did:**
-- Refined character consistency method: Visual reference (upload 3 images: portrait + store interior + character in store)
-- Video #1 concept: Avatar discovers product in Viora store → walks deeper → recommends it
-- Tested start frame expressions: First too exaggerated, second (warmer/natural) approved
-- Created detailed prompts for Start Frame, End Frame, and Kling motion
+### MIGRATION TO GEMINI (2026-03-04)
+**Tool Change:** Moved from ChatGPT/DALL-E to **Gemini**
+**Critical Advantage:** Gemini now has LOCKED REFERENCES — no need to upload images each session
 
-**Where We Are:**
+**Locked in Gemini:**
+- ✅ Viora avatar identity (face, skin tone, melhfa look)
+- ✅ Viora store interior
+- ✅ Authentic Mauritanian melhfa style
+
+**New Prompt Requirements:**
+Every prompt must include:
+1. **CONTEXT:** What the shot is for (hook, product reveal, etc.)
+2. **ACTION:** Exactly what she's doing
+3. **PURPOSE:** Why this frame matters
+4. **Setting/Framing:** Camera angle, lighting, what's visible
+
+### Video #1 — Avatar in Store
+**Status:**
 - Start frame expression: ✅ Approved (warm, natural, genuine smile)
-- Start frame generation: ⏳ Pending final generation with approved expression
-- End frame: ⏳ Not generated yet (needs: same character, deeper in store, more confident pose)
-- Kling video: ⏳ Waiting for both frames
-- Voiceover decision: ⏳ Pending (French? Hassaniya? Text only?)
+- **PAUSED:** B2B dermatologist channel took priority
 
-**Next Steps When You Return:**
-1. Generate Start Frame with final approved expression (reference image saved)
-2. Generate End Frame (character deeper in store, gesturing, confident)
-3. Upload both to Kling 3.0 Pro
-4. Generate video
-5. Decide voiceover approach
-6. Edit and post
+### NEW: Faceless Product Videos (Active Track)
+**Concept:** Hand-only demos using avatar's hand (no face, no voice)
+**Advantage:** Fast iteration while B2B stabilizes, feeds insights back to avatar content later
+**Workflow:** Gemini frames → Kling animation → CapCut text
+
+**Example frame sequence:**
+1. Hand showing dry skin (problem)
+2. Hand holding product (reveal)
+3. Hand applying cream (action)
+4. Hand showing result (proof)
+
+**Next Steps:**
+1. Generate faceless hand demo frames using Gemini locked references
+2. Animate with Kling
+3. Test hooks: "نواكشوط الريح" / "بشرة جافة" / "تشقق اليدين"
+4. If winner emerges, resume full avatar production with proven hooks
 
 ---
 
